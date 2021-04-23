@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JACK STAUBER</title>
+  <style>
+
+  /*-------------헤더----------------*/
+
+    .clear{
+      both;
+    }
+
+    header{
+      /*border: solid 2px white;*/
+      width: 100%;
+      height: 70px;
+      position: fixed;
+      background-color: black;
+      top: 0;
+      /* width: 100% */
+      left: 0;
+      right: 0;
+    }
+
+    #logo{
+      /*border: solid 1px yellow;*/
+      padding: 10px;
+      height: 30px;
+      margin-left: 140px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 270px;
+    }
+
+
+  /*-------------메뉴----------------*/
+    nav{
+      /*border: solid 2px white;*/
+      width: 100%;
+      height: 50px;
+      position: fixed;
+    }
+
+    #menu{
+      height: 50px;
+      float: right;
+      /*border: solid 1px white;*/
+      margin-right: 140px;
+    }
+
+    #menu li{
+      display: inline;
+      padding-right: 60px;
+      text-align: center;
+    }
+
+
+    ul, li ,ol{
+      list-style: none;
+    }
+
+    a{
+      text-decoration: none;
+      color: #dddddd;
+      font-family: "DIN Condensed";
+      font-size: 28px;
+    }
+
+    a.click {
+        color: yellow;
+        font-weight: bolder;}
+
+    a:hover{
+      color: white;
+      font-weight: bold;
+    }
+
+    hr{
+      border: 0px;
+      height: 2px;
+      /*background-color: white;*/
+    }
+
+
+  /*-------------콘텐츠----------------*/
+
+    main{
+      /*border: solid 2px white;*/
+      width: 100%;
+      height: 1000px;
+    }
+
+    body{
+      background-color: #000000;
+      color: #000000;
+      text-align: center;
+    }
+
+    #main{
+      display: inline-block;
+      border: solid 2px white;
+      width: 1500px;
+      height: 700px;
+      margin: 100px 0 100px 0;
+    }
+
+    #vedio{
+      display: inline-block;
+      width: 700px;
+      height: 499px;
+      border: solid 2px white;
+      margin: 100px 0 100px 0;
+    }
+
+    #box_a{
+      float: left;
+      background-color: #1a1a1a;
+      width: 300px;
+      height: 700px;
+      border: solid 2px white;
+      margin-left: -2px;
+      margin-top: -2px;
+    }
+
+    #box_b{
+      float: right;
+      background-color: #d5d0be;
+      width: 300px;
+      height: 700px;
+      /*border: solid 2px green;*/
+    }
+
+    .list{
+      width: 270px;
+      height: 192px;
+      /*border: solid 2px green;*/
+      margin-bottom: 15px;
+    }
+
+    .list_box{
+      width: 270px;
+      height: 600px;
+      /*border: solid 2px green;*/
+      margin: 40px 13px 0px 13px;
+    }
+
+    img:hover{
+    transform:scale(0.9);
+    transition: transform.5s;
+    }
+
+
+
+
+
+
+    /*-------------푸터----------------*/
+        footer{
+          background-color: #0c0c0c;
+          width: 100%;
+          height: 150px;
+        }
+
+
+
+  </style>
+  </head>
+  <body>
+
+<!--헤더-->
+  <header>
+
+    <div id="logo">
+      <li><a href="index.html"><img src="img/logo2.png"></a><li>
+    </div>
+
+    <hr>
+
+  </header>
+<!--네비게이션 메뉴-->
+
+  <nav>
+
+    <div id="menu">
+      <ul>
+        <li><a href="profile.html">PROFILE</a></li>
+        <li><a href="alburm.html"> ALBURM</a></li>
+        <li><a href="vedio.html"class="click">VEDIO</a></li>
+        <!--<li><a href="product.html">PRODUCT</a></li>-->
+      </ul>
+    </div>
+
+  </nav>
+
+  <hr>
+
+  <aside>
+    <div class="aside_box">
+
+    </div>
+  </aside>
+
+<!--메인 콘텐츠 -->
+
+  <main>
+    <div id="main">
+
+      <div id="box_a">
+
+        <div class="list_box">
+
+        <div class="list">
+          <a href="vedio.html" ><img src="img/vedioimage_1.png"></a>
+        </div>
+
+        <div class="list">
+          <a href="vedio2.html"><img src="img/vedioimage_2-1.png"></a>
+        </div>
+
+        <div class="list">
+          <a href="vedio3.html"><img src="img/vedioimage_3-1.png"></a>
+        </div>
+
+
+
+        </div>
+
+
+      </div>
+
+
+
+    <div id="vedio">
+      <video width="700" height="499" poster="vedioimage_1.png" controls autoplay >
+      <source src="vedio1.mp4" type="video/mp4">
+      <source src="vedio1.webm" type="video/webm">
+      <source src="vedio1.ogg" type="video/ogg">
+      </video>
+    </div>
+
+    <div id ="box_b"></div>
+
+    </div>
+
+  </main>
+
+
+  <footer>
+    푸터
+  </footer>
+
+
+  </body>
+</html>

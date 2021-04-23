@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JACK STAUBER</title>
+  <style>
+
+  /*-------------헤더----------------*/
+
+    .clear{
+      both;
+    }
+
+    header{
+      /*border: solid 2px white;*/
+      width: 100%;
+      height: 70px;
+      position: fixed;
+      background-color: black;
+      top: 0;
+      /* width: 100% */
+      left: 0;
+      right: 0;
+    }
+
+    #logo{
+      /*border: solid 1px yellow;*/
+      padding: 10px;
+      height: 30px;
+      margin-left: 140px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 270px;
+    }
+
+
+  /*-------------메뉴----------------*/
+    nav{
+      /*border: solid 2px white;*/
+      width: 100%;
+      height: 50px;
+      position: fixed;
+    }
+
+    #menu{
+      height: 50px;
+      float: right;
+      /*border: solid 1px white;*/
+      margin-right: 140px;
+    }
+
+    #menu li{
+      display: inline;
+      padding-right: 60px;
+      text-align: center;
+      list-style: none;
+    }
+
+
+    ul, li ,ol{
+
+    }
+
+    a{
+      text-decoration: none;
+      color: #dddddd;
+      font-family: "DIN Condensed";
+      font-size: 28px;
+    }
+
+    a.click {
+        color: yellow;
+        font-weight: bolder;}
+
+    a:hover{
+      color: white;
+      font-weight: bold;
+    }
+
+    hr{
+      border: 0px;
+      height: 2px;
+      /*background-color: white;*/
+    }
+    /*-------------좌측 내비게이션---------------*/
+
+    aside{
+      border: solid 2px white;
+      width: 500px;
+      height: 1500px;
+      float: left;
+      margin: 100px 0 0 140px;
+    }
+
+
+    .aside_alburm{
+      width: 150px;
+      height: 150px;
+      float: left;
+      border: solid 2px white;
+      margin-left: -2px;
+      margin-top: -2px;
+    }
+
+    .aside_text{
+      width: 330px;
+      height: 150px;
+      float: right;
+      /*border: solid 1px blue;*/
+    }
+
+    .aside_menu{
+      width: 500px;
+      height: 150px;
+      border: solid 2px white;
+      margin-bottom: 15px;
+      margin-left: -2px;
+      margin-top: -2px;
+    }
+
+  /*-------------콘텐츠----------------*/
+
+    main{
+      /*border: solid 2px white;*/
+      width: 100%;
+      height: 1600px;
+    }
+
+    body{
+      background-color: #000000;
+      color: #000000;
+      text-align: center;
+    }
+
+    #main{
+      display: inline-block;
+      border: solid 2px white;
+      width: 950px;
+      height: 1500px;
+      margin: 100px 0 0 50px;
+      float: left;
+    }
+
+    .asibe_box{
+
+    }
+
+    #alburm_box{
+      width: 950px;
+      height: 950px;
+      border: solid 2px white;
+      margin-left: -2px;
+      margin-top: -2px;
+    }
+
+
+
+    #alburm_image{
+      width: 500px;
+      height: 500px;
+      border: solid 2px white;
+      margin: 0px 225px 50px 225px;
+    }
+
+    #alburm_title{
+      width: 950px;
+      height: 70px;
+      /*border: solid 1px yellow;*/
+      margin-top: 50px;
+    }
+
+    #alburm_text{
+      width: 950px;
+      height: 170px;
+      background-color: black;
+      /*border: solid 1px yellow;*/
+      margin-bottom: 100px;
+    }
+    #sound_box{
+      width: 500px;
+      height: 500px;
+      border: solid 1px black;
+      margin: auto;
+    }
+
+    #sound{
+      width: 500px;
+      height: 80px;
+      border: solid 1px black;
+      margin-bottom: 15px;
+    }
+    .text{
+      float: left;
+      border: solid 1px black;
+      margin: 15px;
+      width: 150px;
+    }
+
+    .list{
+      float: left;
+      border: solid 1px black;
+      margin: 15px 15px 15px 0;
+    }
+
+    img:hover{
+    transform:scale(0.9);
+    transition: transform.5s;
+    }
+
+
+    p{
+      color: white;
+    }
+
+    #alburm_title2{
+      color: white;
+      font-size: 40px;
+      font-family: "DIN Condensed";
+      margin: 10px;
+    }
+
+
+    /*-------------푸터----------------*/
+        footer{
+          background-color: #0c0c0c;
+          width: 100%;
+          height: 150px;
+        }
+
+
+
+  </style>
+  </head>
+  <body>
+
+<!--헤더-->
+  <header>
+
+    <div id="logo">
+      <li><a href="index.html"><img src="img/logo2.png"><li>
+    </div>
+
+    <hr>
+
+  </header>
+<!--네비게이션 메뉴-->
+
+  <nav>
+
+    <div id="menu">
+      <ul>
+        <li><a href="profile.html">PROFILE</a></li>
+        <li><a href="alburm.html"class="click"> ALBURM</a></li>
+        <li><a href="vedio.html">VEDIO</a></li>
+        <!--<li><a href="product.html">PRODUCT</a></li>-->
+      </ul>
+    </div>
+  </nav>
+
+  <hr>
+
+<!--좌측 내비게이션 -->
+  <aside>
+
+    <div class="aside_box">
+
+      <div class="aside_menu">
+
+        <div class="aside_alburm">
+         <a href="alburm.html"><img src="img/alburm1-1.jpeg"></a>
+        </div>
+
+        <div class="aside_text"></div>
+
+      </div>
+
+      <div class="aside_menu">
+
+        <div class="aside_alburm">
+         <a href="alburm2.html"><img src="img/alburm2.jpeg"></a>
+        </div>
+
+        <div class="aside_text"></div>
+
+      </div>
+
+      <div class="aside_menu">
+
+        <div class="aside_alburm">
+         <a href="alburm3.html"><img src="img/alburm3-1.jpeg"></a>
+        </div>
+
+        <div class="aside_text"></div>
+
+      </div>
+
+      <div class="aside_menu">
+
+        <div class="aside_alburm">
+         <a href="alburm4.html"><img src="img/alburm4-1.jpeg"></a>
+        </div>
+
+        <div class="aside_text"></div>
+
+      </div>
+
+      <div class="aside_menu">
+
+        <div class="aside_alburm">
+         <a href="alburm5.html"><img src="img/alburm5-1.jpeg"></a>
+        </div>
+
+        <div class="aside_text"></div>
+
+      </div>
+
+
+
+
+    </div>
+
+  </aside>
+
+<!--메인 콘텐츠 -->
+
+  <main>
+
+    <div id="main">
+
+    <div id="alburm_box">
+      <div id="alburm_title">
+          <p id="alburm_title2">Viator</p>
+      </div>
+      <div id="alburm_image">
+        <img src="img/alburm2.jpeg" width="500px">
+      </div>
+      <div id="alburm_text">
+      </div>
+    </div>
+    <!--sound-->
+
+        <div id="sound_box">
+
+          <!--sound-->
+          <div id="sound">
+            <div class="text">
+              <p> Buttercup </p>
+           </div>
+
+            <div class="list">
+              <audio src="audio/Buttercup.mp3" controls autoplay ></audio>
+            </div>
+          </div>
+
+          <!--sound-->
+          <div id="sound">
+            <div class="text">
+              <p> Buttercup </p>
+           </div>
+
+            <div class="list">
+              <audio src="audio/Buttercup.mp3" controls autoplay ></audio>
+            </div>
+          </div>
+
+          <!--sound-->
+          <div id="sound">
+            <div class="text">
+              <p> Buttercup </p>
+           </div>
+
+            <div class="list">
+              <audio src="audio/Buttercup.mp3" controls autoplay ></audio>
+            </div>
+          </div>
+          <!--sound-->
+          <div id="sound">
+            <div class="text">
+              <p> Buttercup </p>
+           </div>
+
+            <div class="list">
+              <audio src="audio/Buttercup.mp3" controls autoplay ></audio>
+            </div>
+          </div>
+          <!--sound-->
+          <div id="sound">
+            <div class="text">
+              <p> Buttercup </p>
+           </div>
+           <!--sound-->
+            <div class="list">
+              <audio src="audio/Buttercup.mp3" controls autoplay ></audio>
+            </div>
+          </div>
+        </div>
+
+    </div>
+</main>
+
+  <footer>
+    푸터
+  </footer>
+
+
+  </body>
+</html>
